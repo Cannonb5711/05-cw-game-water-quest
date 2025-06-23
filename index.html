@@ -3,21 +3,32 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Water Quest</title>
+  <title>Jerry Can Quest</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
   <div class="container">
-    <h1>Water Quest</h1>
+    <img src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/102013/charity_water-converted.png?itok=2ZWJ5Cuz" alt="charity: water logo" style="display:block;margin:0 auto 18px auto;max-width:160px;width:60vw;">
+    <h1>Jerry Can Quest</h1>
     <p class="game-instructions">Collect 20 items to complete the game!</p>
     <div class="stats">
       <p>Cans Collected: <span id="current-cans">0</span></p>
       <p>Time Left: <span id="timer">30</span>s</p>
     </div>
+    <button id="difficulty-btn">Difficulty: Medium</button>
+    <button id="pause-btn" style="display:none;">Pause</button>
+    <div id="can-visuals" class="can-visuals"></div>
     <div id="achievements" class="achievement"></div>
     <div class="game-grid"></div>
     <button id="start-game">Start Game</button>
   </div>
   <script src="script.js"></script>
+  <footer class="about-footer">
+    <div class="about-container">
+      <h2>About Us</h2>
+      <p>Jerry Can Quest is inspired by the mission of charity: water</a> — bringing clean and safe drinking water to people in need around the world. Every can you collect in this game represents hope, health, and a brighter future for communities everywhere.</p>
+      <a href="https://www.charitywater.org/main" target="_blank" rel="noopener" class="cta-btn">Learn More at charity: water</a>
+    </div>
+  </footer>
 </body>
 </html>
